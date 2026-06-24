@@ -21,7 +21,7 @@ This is not application code — it's an **agent skill pack**. The "skills" are 
 
 **Two skill trees with different ownership — know which one you're editing:**
 
-- `skills/` — canonical, hand-edited skills specific to *this* repo: `arcads-external-api` (the core API skill), `generate-youtube-thumbnail`, `chatgpt-image-ad`, `nano-banana-image-ad`, `image-ad-clone`.
+- `skills/` — canonical, hand-edited skills specific to *this* repo: `arcads-external-api` (the core API skill), `generate-youtube-thumbnail`, `chatgpt-image-ad`, `nano-banana-image-ad`, `image-ad-clone`. Also holds `emil-design-eng` — a general UI-polish/animation-craft skill (unrelated to Arcads, imported from [emilkowalski/skill](https://github.com/emilkowalski/skill)) kept here only because `skills/` is the one tracked location that gets synced into `.claude/skills/`/`.cursor/skills/` and survives across sessions.
 - `shared/` — propagated verbatim from an upstream `gen-ai-core` repo (see `shared/README.md`). **Never hand-edit anything under `shared/`** — it's overwritten on the next upstream sync. This includes `shared/CLAUDE.md` (imported above), `shared/scripts/*`, and the cross-API skills (`pixar-style-ad`, `claymation-ad`, `caption-video`, `meta-ad-builder`, `image-ad-prompting`).
 
 Both trees are copied by `scripts/sync-skill.sh` into `.claude/skills/` and `.cursor/skills/` — the gitignored, generated directories the editors actually read at runtime. If a skill change doesn't seem to take effect, check whether sync ran.
