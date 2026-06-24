@@ -9,4 +9,5 @@
     - `chatgpt-image-ad` — generate via Arcads `gpt-image-2` (typography / UI-mimicry creatives)
     - `nano-banana-image-ad` — generate via Arcads `nano-banana-2`/`-pro`/`-edit` (photoreal / lifestyle creatives)
     - `image-ad-clone` — single backend-agnostic skill that reverse-engineers existing ads into reusable templates (asks which backend to validate against at Phase 1; optionally cross-validates at Phase 8)
+  - `emil-design-eng` — general UI-polish / animation-craft skill (unrelated to Arcads; imported from [emilkowalski/skill](https://github.com/emilkowalski/skill)), kept under `skills/` only because that's the tracked location synced into `.claude/skills/`/`.cursor/skills/`.
 - **Setup check:** `./scripts/check-arcads-env.sh`.
