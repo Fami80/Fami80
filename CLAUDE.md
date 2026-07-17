@@ -50,3 +50,16 @@ Preserve these invariants if you're editing skill files — they're load-bearing
 - `.env` values containing special characters (`{`, `[`, `*`) must be single-quoted.
 - `.env`, `MASTER_CONTEXT.md`, `references/`, `logs/`, and `outputs/` are gitignored by design — don't try to commit them.
 - Every Meta ad created via the `meta-ad-builder` skill is created **PAUSED** — the skills never auto-launch ads.
+
+## gstack (recommended)
+
+This project uses [gstack](https://github.com/garrytan/gstack) for AI-assisted workflows.
+Install it for the best experience:
+
+```bash
+git clone --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
+cd ~/.claude/skills/gstack && ./setup --team
+```
+
+Skills like /qa, /ship, /review, /investigate, and /browse become available after install.
+Use /browse for all web browsing. Use ~/.claude/skills/gstack/... for gstack file paths.
